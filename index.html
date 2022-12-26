@@ -98,17 +98,18 @@
     <button>Change City</button>
     <p>Coded by J.Ayala</p>
     <script>
+      function updateHeading(newHeading) {
+        let heading = document.querySelector("h1");
+        heading.innerHTML = newHeading;
+      }
+
       function changeCity() {
         let city = prompt("What city do you live in?");
         let temperature = prompt("What temperature is it?");
         if (temperature < 0) {
-          let heading = document.querySelector("h1");
-          heading.innerHTML =
-            "❄️ <br/>Currenlty " + temperature + "°C in " + city;
+          updateHeading(`❄️ <br/>Currenlty ${temperature}°C in ${city}`);
         } else {
-          let heading = document.querySelector("h1");
-          heading.innerHTML =
-            "😁 <br/>Currenlty " + temperature + "°C in " + city;
+          updateHeading(`😁 <br/>Currenlty ${temperature}°C in ${city}`);
         }
       }
 
