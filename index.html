@@ -99,7 +99,17 @@
     <p>Coded by J.Ayala</p>
     <script>
       function changeCity() {
-        alert("Click");
+        let city = prompt("What city do you live in?");
+        let temperature = prompt("What temperature is it?");
+        if (temperature < 0) {
+          let heading = document.querySelector("h1");
+          heading.innerHTML =
+            "❄️ <br/>Currenlty " + temperature + "°C in " + city;
+        } else {
+          let heading = document.querySelector("h1");
+          heading.innerHTML =
+            "😁 <br/>Currenlty " + temperature + "°C in " + city;
+        }
       }
 
       let changeButton = document.querySelector("button");
