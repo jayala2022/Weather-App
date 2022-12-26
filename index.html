@@ -5,6 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      h1 {
+        color: #1a64d6;
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 34px;
+        line-height: 48px;
+        margin: 0;
+        text-align: center;
+      }
+      h2 {
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 48px;
+        margin: 0;
+        text-align: center;
+      }
+
+      h3 {
+        font-family: Helvetica, Arial, sans-serif;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        list-style-type: none;
+        text-align: center;
+        padding: 10px 0;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      li:hover {
+        background: lightgoldenrodyellow;
+      }
+
+      p {
+        font-size: 18px;
+        opacity: 0.7;
+        text-align: center;
+        font-family: monospace;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #1a64d6;
+        background: #1a64d6;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgb(37 39 89 / 8%) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #fff;
+        color: #1a64d6;
+        border: 1px solid #1a64d6;
+      }
+    </style>
   </head>
   <body>
     <h1>
@@ -16,15 +84,15 @@
     <ul>
       <li>
         <h3>🌧️ Tomorrow</h3>
-        <p>10° | 22°</p>
+        <p>10° | <strong>22°</strong></p>
       </li>
       <li>
         <h3>☁️ Saturday</h3>
-        <p>15° | 17°</p>
+        <p>15° | <strong>17°</strong></p>
       </li>
       <li>
         <h3>☀️ Sunday</h3>
-        <p>25° | 28°</p>
+        <p>25° | <strong>28°</strong></p>
       </li>
     </ul>
     <button>Change City</button>
